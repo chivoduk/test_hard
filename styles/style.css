@@ -1,0 +1,220 @@
+/*Простой*/
+  @font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+  local('PT Sans'), local('PTSans-Regular');
+  src: 
+  url(https://fonts.gstatic.com/s/ptsans/v9/HxndcvKFXWMbmSKW3biIqQ.eot);
+  src:
+  url(https://fonts.gstatic.com/s/ptsans/v9/HxndcvKFXWMbmSKW3biIqQ.eot?) format('eot'),
+  url(https://fonts.gstatic.com/s/ptsans/v9/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff'),
+  url(https://fonts.gstatic.com/s/ptsans/v9/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+}
+
+/*Жирный*/
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold');
+  src: url(https://fonts.gstatic.com/s/ptsans/v9/HxndcvKFXWMbmSKW3biIqQ.eot); 
+  src:
+  url(https://fonts.gstatic.com/s/ptsans/v9/HxndcvKFXWMbmSKW3biIqQ.eot?) format('eot'),
+  url(https://fonts.gstatic.com/s/ptsans/v9/g46X4VH_KHOWAAa-HpnGPhsxEYwM7FgeyaSgU71cLG0.woff) format('woff'),
+  url(https://fonts.gstatic.com/s/ptsans/v9/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font: 14px/22px 'PT Sans';
+  color: #767676;
+}
+
+header, nav, section, aside, footer {
+  display: block;
+  width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav, footer {
+  background-color: #777777;
+  color: #ffffff;
+}
+
+.inner, section {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+header {
+  background-color: #dcdcdc;
+  height: 230px;
+}
+
+header img {
+  width: 273px;
+  height: 100px;
+  float:left;
+  margin-top: 65px;
+}
+
+#numbers {
+  float: right;
+  margin-top: 45px;
+}
+
+#numbers li {
+  line-height: 40px;
+  text-align: right;
+  font-size: 40px;
+}
+
+#numbers a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #777777;
+  border-bottom: 2px dashed #777777;
+}
+
+#numbers a:hover {
+  text-decoration: none;
+}
+
+.nav {
+  height: 80px;
+  font-size: 30px;
+}
+
+.nav ul {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.nav li {
+    display: inline-block;
+    height: 10px;
+
+}
+
+.nav a {
+  display: block;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 0 10px 0 10px;
+}
+
+.nav li:last-child a {
+  border-right: none;
+  padding-right: 0;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  opacity: 1;
+  transition: opacity 4s ease;
+  overflow: hidden;
+}
+
+#next img, #back img {
+  position: absolute;
+  width: 34px;
+  height: 61px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#next img {
+  right: 0;
+  top: 45%;
+}
+
+#back img {
+  left: 0;
+  top: 45%;
+}
+
+#images > img {
+  width: 1248px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+#tree li{
+  float: left;
+  padding: 9px 0 23px 0;
+}
+
+#tree a {
+  color: #777777;
+  text-decoration: underline;
+
+}
+
+aside {
+  width: 200px;
+  float: left;
+}
+
+aside > ul > li > ul {
+  display: none;
+}
+
+aside > ul > li > a{
+  font-size: 18px;
+  color: #767676;
+  cursor: pointer;
+}
+
+aside > ul > li >ul > li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+aside ul > li > ul > li a{
+  font-size: 14px;
+   color: #767676;
+   margin-left: -10px;
+   cursor: pointer;
+}
+
+.activLink {
+  font-weight: bold;
+}
+
+#content {
+  /*width: 100%;*/
+  height: 100px;
+  padding-left: 200px;
+}
+
+#price img{
+  width: 151px;
+  height: 144px;
+  margin-top: 110px;
+  margin-left: 15px;
+}
