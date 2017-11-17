@@ -129,6 +129,7 @@ header img {
   opacity: 1;
   transition: opacity 4s ease;
   overflow: hidden;
+  background-color: #f8f8f8;
 }
 
 #next img, #back img {
@@ -173,9 +174,14 @@ header img {
 
 }
 
+#main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 aside {
-  width: 200px;
-  float: left;
+  flex: 0 1 200px;
 }
 
 aside > ul > li > ul {
@@ -207,9 +213,7 @@ aside ul > li > ul > li a{
 }
 
 #content {
-  /*width: 100%;*/
-  height: 100px;
-  padding-left: 200px;
+  flex: 1 1;
 }
 
 #price img{
@@ -217,4 +221,14 @@ aside ul > li > ul > li a{
   height: 144px;
   margin-top: 110px;
   margin-left: 15px;
+}
+
+.blockProduct .product{
+  width: 210px;
+  height: 209px;
+}
+
+.blockProduct .basket {
+  width: 28px;
+  height: 21px;
 }
