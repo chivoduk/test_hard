@@ -4,7 +4,7 @@ var backArg;
 var images = document.getElementById('images').getElementsByTagName('img');
 images[counter].style.opacity = '1';
 
-// var int = setInterval(fade, 4000);
+var int = setInterval(fade, 4000);
 
 function fade (direction) {
 	clear();
